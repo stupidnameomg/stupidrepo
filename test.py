@@ -1,3 +1,5 @@
 import math
 
-print(math.pi)
+print(2*math.pi)
+print('LOL')
+
