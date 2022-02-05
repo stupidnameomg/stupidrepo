@@ -87,3 +87,9 @@ for _ in range(no_images):
 loss = dt.losses.flatten(
     dt.losses.weighted_crossentropy()
 )
+metric = dt.losses.flatten(
+    dt.losses.weighted_crossentropy((1, 1))
+)
+model = dt.models.UNet(
+    (None, None, 1),  # känns överflödig? denna är ju default
+)
